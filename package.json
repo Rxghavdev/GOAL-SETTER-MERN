@@ -1,0 +1,22 @@
+{
+  "name": "mern-tt",
+  "version": "1.0.0",
+  "description": "gooalsetter",
+  "main": "index.js",
+  "scripts": {
+
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
