@@ -1,9 +1,12 @@
-
+const colors=require('colors')
 const express = require('express') //bringing express in backend
 const dotenv = require('dotenv').config() //dotenv for env variables
 const{errorHandeler}=require('./middleware/errormiddleware')        //brings error handleler into main server by folder
-
+const connectDB= require('./config/db')
 const port = process.env.PORT || 5000
+
+connectDB()
+
 const app= express()
 
 app.use(express.json())
